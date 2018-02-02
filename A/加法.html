@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基础</title>
+	</head>
+	<body ng-app="myApp">
+	<div ng-controller="myControl">
+		<tt>MyEvent</tt>count:{{count}}
+		<ul>
+			<li ng-repeat="item in [1]" ng-controller="EventController">
+					<button ng-click="$emit('MyEvent')">
+						$emit('MyEvent')
+					</button> <br />
+								<button ng-click="$broadcast('MyEvent')">
+						$broadcast('MyEvent')
+					</button>
+					Middle scope
+					<tt>MyEvent</tt>count:{{count}}
+						<ul>
+							<li ng-repeat="item in [1, 2]" ng-controller="EventController">
+								Leaf scope
+								<tt>MyEvent</tt>count:{{count}} 
+							</li>
+						</ul>
+					
+					
+					
+			</li>
+		</ul>
+		
+		
+		
+		
+	</div>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular2.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>templaceCache</title>
+	</head>
+	<body ng-app="AApp">
+<div ng-controller="ACtrl">
+<h4>自动验证</h4>
+	<form action="#" method="post" ng-submit="save()" name="myForm">
+			<input type="text" name="username" ng-model="user.username" required/>
+			<input type="password" name="password" ng-model="user.userpassword" required/>
+		<input type="submit" value="12222" ng-disabled="myForm.$invalid"/>
+	</form>
+	
+	
+	
+	
+	
+</div>
+		<script src="angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="A.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

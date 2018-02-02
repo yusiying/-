@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="showApp">
+	<head>
+		<meta charset="utf-8">
+		<title>显示或隐藏</title>
+	</head>
+	<body>
+				<div ng-controller="showContrl">
+					 <button ng-click="toggleMune()">切换列表状的显示</button>
+								<ul ng-show='menuState.show'>			<!--控制下列值是否显示-->
+										<li ng-click='stun()'>stun</li>			<!---->
+										<li ng-click='disintegrate()'></li>			<!---->
+										<li ng-click='erase()'></li>			<!---->
+								</ul>
+	
+				
+				
+				
+				</div>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ng-show.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

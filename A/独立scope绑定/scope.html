@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>templaceCache</title>
+	</head>
+	<body ng-app="ScApp">
+				<div ng-controller="SCCtrl">
+					<div>{{ctrlF}}</div>
+					<div wo flavor="ctrlF"></div>
+					<input type="text" ng-model="ctrlF"/>		
+				</div>
+					<div ng-controller="gRCtrl">
+						<greeting greet="say(name)"></greeting>
+						<greeting greet="say(name)"></greeting>
+						<greeting greet="say(name)"></greeting>
+				</div>
+		<script src="angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scope.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
